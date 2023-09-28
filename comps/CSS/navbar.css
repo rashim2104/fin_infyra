@@ -22,11 +22,11 @@ body a {
     width: 99%;
     backdrop-filter: blur(2px) saturate(180%);
     -webkit-backdrop-filter: blur(2px) saturate(180%);
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(1, 1, 1, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.125);
     z-index: 9999;
     transition: 0.4s;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Martian Mono', sans-serif;
     font-weight: 300;
     will-change: contents;
 }
@@ -59,6 +59,25 @@ body a {
     cursor: pointer;
     margin-right: 10px;
   }
+
+  .hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+    /* outline: 1px solid red; */
+    flex-direction: column;
+    /* gap: 50px; */
+    padding: 10% 0;
+    padding-bottom: 0%;
+    width: 100%;
+}
+
+.hero img{
+    width: 40%;
+    z-index: -9999;
+    margin: auto;
+}
   
   .ghost-btn {
     background-color: transparent;
@@ -69,4 +88,27 @@ body a {
   .ghost-btn:hover {
     background-color: #E48C3B;
     color: black;
+  }
+
+.header1-mobile {
+    display: none;
+  }
+  
+  @media (max-width: 400px) {
+    .header1-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header1{
+        display: none;
+    }
+  }
+
+::-webkit-scrollbar-track {
+    background-color: #E48C3B;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: #E48C3B;
   }
